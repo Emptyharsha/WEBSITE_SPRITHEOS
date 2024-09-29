@@ -1,0 +1,379 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #059a3e;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f4f5f6;
+}
+
+/* Header styles */
+/* Header styles */
+header {
+    background-color: #0000007d;    /* Semi-transparent black */
+    color: #fff;
+    padding: 20px 0;
+    display: flex;                  /* Flexbox for horizontal alignment */
+    align-items: center;            /* Vertically center items */
+    justify-content: space-between; /* Space between logo and nav */
+}
+
+/* Logo styling */
+.logo {
+    margin-left: 30px;              /* Space to the left of the logo */
+}
+
+.logo img {
+    width: 160px;                   /* Adjust the width of the logo */
+    height: auto;                   /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+nav {
+    margin-right: 30px;             /* Space to the right of the nav */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;                  /* Display nav items in a row */
+}
+
+nav li {
+    margin-left: 20px;              /* Space between nav items */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;                 /* Change color on hover */
+}
+
+/* About, Services, and Contact section styles */
+.section {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section .content {
+    width: 60%;                     /* Content takes up 60% of the section width */
+}
+
+.section .content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.section .social-icons {
+    width: 30%;                     /* Social icons take up 30% of the section width */
+    text-align: right;               /* Align the icons to the right */
+}
+
+/* Style for the social icons */
+.social-icons {
+    display: flex;                    /* Flexbox for horizontal layout */
+    justify-content: center;          /* Center the icons */
+    margin-top: 20px;                 /* Add space between the icons and the nav */
+    gap: 15px;                        /* Spacing between each icon */
+}
+
+/* General icon styles */
+.social-icons a {
+    font-size: 36px;                  /* Increase the icon size */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;  /* Smooth hover effect */
+}
+
+/* Icon hover effect: grow the icons */
+.social-icons a:hover {
+    transform: scale(1.2);            /* Icons grow slightly on hover */
+}
+
+/* Individual icon colors */
+.social-icons a.fa-facebook {
+    color: #3b5998;                   /* Facebook official color */
+}
+
+.social-icons a.fa-twitter {
+    color: #1da1f2;                   /* Twitter official color */
+}
+
+.social-icons a.fa-instagram {
+    color: #e4405f;                   /* Instagram official color */
+}
+
+.social-icons a.fa-whatsapp {
+    color: #25d366;                   /* WhatsApp official color */
+}
+
+/* Hover color effect: brighter on hover */
+.social-icons a.fa-facebook:hover {
+    color: #4a6ea8;
+}
+
+.social-icons a.fa-twitter:hover {
+    color: #4abff2;
+}
+
+.social-icons a.fa-instagram:hover {
+    color: #f77737;
+}
+
+.social-icons a.fa-whatsapp:hover {
+    color: #34eb6b;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;       /* Stack logo and nav vertically */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;       /* Stack nav items vertically */
+        margin-top: 10px;
+    }
+
+    .section {
+        flex-direction: column;       /* Stack sections content and icons */
+        text-align: center;
+    }
+
+    .section .content, 
+    .section .social-icons {
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;      /* Center icons on smaller screens */
+        margin-top: 20px;
+    }
+}
+
+
+/* Hero section styles */
+.home {
+    background: url(person.jpeg);
+    background-position: center;
+    background-image: url(person.jpeg);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-position: center center;
+    padding: 150px 0px;
+    text-decoration:none;
+}
+.home h1 {
+    
+    color:white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    color:white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* About section styles */
+.about {
+    padding: 80px 0;
+}
+
+/* Services section styles */
+.services {
+    padding: 80px 0;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Testimonial section styles */
+.testimonial {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+}
+
+blockquote {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+blockquote p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+blockquote footer {
+    font-style: normal;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Work section styles */
+.work-slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide-wrapper {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 400px;
+    
+    transition: opacity 0.5s ease;
+  }
+  
+  .slide img {
+    width:400px;
+    height: 100%;
+    object-fit: cover;
+    padding: 2px;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+
+/* Location section styles */
+.location {
+    
+    align-items: center;
+    color: #000000;
+    padding: 80px 0;
+}
+
+.address-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    padding-left: 50px;
+    margin: 20px 0px 20px 0px;
+}
+.map {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0px 20px 0px;
+}
+
+/* Footer styles */
+footer {
+    
+    color: hsl(0, 3%, 12%);
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-social-icons a {
+    color: #5308c5; /* Default color */
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 36px !important; /* Ensure the font size increases */
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons a.fa-facebook {
+    color: #3b5998; /* Facebook color */
+}
+
+.footer-social-icons a.fa-twitter {
+    color: #1da1f2; /* Twitter color */
+}
+
+.footer-social-icons a.fa-instagram {
+    color: #e4405f; /* Instagram color */
+}
+
+.footer-social-icons a:hover {
+    color: #007bff; /* Color on hover */
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+    
+    header {
+        padding: 15px 0; /* Reduced header padding */
+    }
+
+    .section {
+        padding: 20px 0; /* Reduced padding */
+    }
+
+    .home h1 {
+        font-size: 28px; /* Adjust font size for mobile */
+    }
+
+    .home p {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* Single column layout for services */
+    }
+}
